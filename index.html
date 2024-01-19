@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iChat Ayush</title>
+    <script defer src="http://localhost:8000/socket.io/socket.io.js"></script>
+    <script src="https://kit.fontawesome.com/0fca213e4b.js" crossorigin="anonymous"></script>
+    <script defer src="js/client.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <a id="p1"  class="info"><i class="fa-solid fa-lightbulb"></i></a>
+    <a href="index2.html" class="info2"><i class="fa-solid fa-bars"></i></a>
+    <nav>
+        <img class="logo" src="chat.png" alt="">
+        <h1>Chat here</h1>
+    </nav>
+    <div class="container"></div> 
+    <div class="send">
+        <form action="#" id="send-container">
+            <input type="text" name="messageInp" id="messageInp">
+            <button class="btn" type="submit">Send</button>
+        </form>
+    </div>
+</body>
+<script>
+let bulb = document.querySelector('.info');
+let body = document.body;
+let a =1;
+let color =()=>{
+    if (body.style.background = "white") {
+    console.log("grey")
+    body.style.background="grey";
+   }
+  else  {
+    body.style.background="white";
+    
+   }
+}
+bulb.addEventListener('click',()=>{
+    
+  body.classList.toggle("dark-mode");
+})
+
+
+</script>
+
+</html>
